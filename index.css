@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    padding: 30px;
+}
+
+.main__title {
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.item__title {
+    margin-right: 10px;
+}
+
+.item__date {
+    margin: 0 10px;
+}
+
+.item__time-container {
+    display: flex;
+}
+
+.item__time {
+    margin: 0 10px;
+}
+
+.item__comment {
+    width: 300px;
+    height: 100px;
+    resize: none;
+}
