@@ -8,9 +8,11 @@ const commentNode = document.querySelector('.js-comment')
 const btnSendNode = document.querySelector('.js-btn-send')
 const btnClearNode = document.querySelector('.js-btn-clear')
 
-const currentDate = getCurrentDate()
-
-dateNode.setAttribute('min', currentDate)
+new AirDatepicker(dateNode, {
+    selectedDates: [new Date()],
+    autoClose: true,
+    minDate: new Date(),
+})
 
 btnSendNode.addEventListener('click', (e) => {
     e.preventDefault()
